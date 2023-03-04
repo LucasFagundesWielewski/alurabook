@@ -1,0 +1,63 @@
+.contrato {
+    background-color: var(--branco);
+    padding: 1em;  
+}
+
+.contrato__titulo 
+.contrato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contrato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contrato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contrato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul)
+}
+
+.contrato__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("../img/email.svg") no-repeat;
+    padding: 0 2em;
+}
+
+@media  screen and (min-width: 1024px) {
+    .contrato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contrato__titulo {
+        font-size: 24px;
+    }
+
+    .contrato__descricao {
+        margin-right: 1em;
+        width: 30%;
+    }
+    
+    .contrato__email {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contrato {
+        padding: 3em 20vw;
+    }
+}
